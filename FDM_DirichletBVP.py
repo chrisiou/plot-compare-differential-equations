@@ -61,6 +61,6 @@ for n in N2:
     t = np.linspace(0, np.pi, n+1)
     print("for N =", n, " error is: ", np.linalg.norm(fdm(n, yA, yB) - y(t), np.inf))
 
-# convergence analysis: (np.log(E[i+1]/E[i]) / np.log( N[i] / N[i+1])), for E a list of errors of different N
+# convergence analysis: (np.log(E[i+1]/E[i]) / np.log( N[i] / N[i+1])), for E a list of errors for different N
 
 makeGraph(U, N)
