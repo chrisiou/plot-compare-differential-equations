@@ -28,7 +28,7 @@ def fdm(N, yA, yB):
     Q = np.ones(N-1)*q(t[1:-2])*(2+h**2)
     Z = np.ones(N-2)*(-1)
 
-    # AU = F => (Z+h(^2)Q)U = F(h^2)
+    # AU = F => (Z+(h^2)Q)U = F(h^2)
     A = np.diag(Q,0) + np.diag(Z, 1) + np.diag(Z, -1)
 
     U = np.linalg.solve(A,F)
